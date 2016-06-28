@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="./app.js"></script>
+</head>
+<body ng-app="simulation">
+<div>
+    <div class="container" ng-controller="simulationTest">
+        <div class="row">
+            <label class="col-lg-2 col-sm-10">テスト</label>
+        </div>
+        <h1>{{myTestDisplay}}</h1>
+        <div ng-model="myTest" value="6000000" min="0" max="20000000" my-directive></div>
+    </div>
+</div>
+</body>
+</html>
